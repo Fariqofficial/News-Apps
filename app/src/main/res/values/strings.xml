@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">News Apps</string>
+    <string name="txt_title">News Title</string>
+    <string name="txt_few_hours">2 jam yang lalu</string>
+    <string name="source">Source</string>
+    <string name="desc_news">News Description</string>
+    <string name="title_news">News Title</string>
+    <string name="author">Author</string>
+    <string name="txt_bisnis">Business</string>
+    <string name="txt_hiburan">Entertainment</string>
+    <string name="txt_kesehatan">Health</string>
+    <string name="txt_olahraga">Sports</string>
+    <string name="txt_kategori">Categories</string>
+    <string name="txt_berita">News Today</string>
+</resources>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fcfcfc">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/txt_kategori"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollViewHz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvBusiness"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@android:color/holo_blue_light"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <RelativeLayout
+                                android:layout_width="35dp"
+                                android:layout_height="35dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:tint="@android:color/white"
+                                    app:srcCompat="@drawable/bg_circle"
+                                    tools:ignore="UseAppTint" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_business"
+                                    android:tint="@android:color/holo_blue_light"
+                                    tools:ignore="UseAppTint" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/txt_bisnis"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvEntertainment"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@android:color/holo_green_light"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <RelativeLayout
+                                android:layout_width="35dp"
+                                android:layout_height="35dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:tint="@android:color/white"
+                                    app:srcCompat="@drawable/bg_circle"
+                                    tools:ignore="UseAppTint" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_entertainment"
+                                    android:tint="@android:color/holo_green_light"
+                                    tools:ignore="UseAppTint" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/txt_hiburan"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvHealth"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@android:color/holo_purple"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <RelativeLayout
+                                android:layout_width="35dp"
+                                android:layout_height="35dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:tint="@android:color/white"
+                                    app:srcCompat="@drawable/bg_circle"
+                                    tools:ignore="UseAppTint" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_health"
+                                    android:tint="@android:color/holo_purple"
+                                    tools:ignore="UseAppTint" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/txt_kesehatan"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvSport"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@android:color/holo_orange_light"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <RelativeLayout
+                                android:layout_width="35dp"
+                                android:layout_height="35dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:tint="@android:color/white"
+                                    app:srcCompat="@drawable/bg_circle"
+                                    tools:ignore="UseAppTint" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_sports"
+                                    android:tint="@android:color/holo_orange_light"
+                                    tools:ignore="UseAppTint" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/txt_olahraga"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/txt_berita"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDataNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
