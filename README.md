@@ -1,0 +1,4 @@
+# News-Apps
+News Apps is an application to get news from newsapi.org, this application can sort news by category, search news by keyword and also display news with webview
+
+![loading](https://user-images.githubusercontent.com/37206465/142795006-bd052e17-a61f-4cd2-8e87-2f9b8e646386.png)  ![Main Screen](https://user-images.githubusercontent.com/37206465/142795010-c569c04c-f646-42ff-934b-60b4de879386.png)      ![sort by category](https://user-images.githubusercontent.com/37206465/142795017-4d65c0a4-df06-48ed-aaf0-c30971715064.png)  ![search article](https://user-images.githubusercontent.com/37206465/142795026-26c668ec-7fa6-4b11-9b77-77ddb5592049.png)    ![Screenshot_1](https://user-images.githubusercontent.com/37206465/142795031-6f1791bd-2198-4e29-a20b-4799c77f1ad1.png)  ![Screenshot_2](https://user-images.githubusercontent.com/37206465/142795036-6e8fd64d-b196-4000-a33a-286abaeb8b44.png)
